@@ -13,8 +13,9 @@ def is_allowed(target_url, user_agent='*'):
 
 
 if __name__ == '__main__':
-    prepare('http://hajba.hu/robots.txt')
+    # todo how to deal with https
+    prepare('https://www.apress.com/robots.txt')
 
-    print(is_allowed('http://hajba.hu/category/software-development/java-software-development/', 'bookbot'))
-    print(is_allowed('http://hajba.hu/category/software-development/java-software-development/', 'my-agent'))
-    print(is_allowed('http://hajba.hu/category/software-development/java-software-development/', 'googlebot'))
+    print(is_allowed('https://www.apress.com/category/software-development/java-software-development/', 'bookbot'))
+    print(is_allowed('https://www.apress.com/category/software-development/java-software-development/', 'my-agent'))
+    print(is_allowed('https://www.apress.com/category/software-development/java-software-development/', 'googlebot'))
